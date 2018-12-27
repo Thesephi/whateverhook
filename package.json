@@ -1,0 +1,21 @@
+{
+  "name": "whateverhook",
+  "version": "0.1.0",
+  "description": "Start a network listener that outputs whatever it receives",
+  "scripts": {
+    "build": "cp -R src/* bin",
+    "prepare": "npm i && npm run build",
+    "bin": "bin",
+    "start-web": "LOG_LEVEL=info PORT=3002 node src/webhook.js | $(npm bin)/bunyan -o short",
+    "start-tcp": "PORT=3002 node src/tcphook.js"
+  },
+  "dependencies": {
+    "somnus": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Thesephi/whateverhook.git"
+  },
+  "author": "Khang Dinh",
+  "license": "MIT"
+}
