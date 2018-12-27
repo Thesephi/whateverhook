@@ -1,6 +1,6 @@
 {
   "name": "whateverhook",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A stupid network listener that outputs whatever it receives",
   "scripts": {
     "build": "cp -R src/* lib",
