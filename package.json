@@ -1,6 +1,6 @@
 {
   "name": "whateverhook",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A stupid network listener that outputs whatever it receives",
   "scripts": {
     "build": "cp -R src/* lib",
@@ -17,5 +17,13 @@
     "url": "https://github.com/Thesephi/whateverhook.git"
   },
   "author": "Khang Dinh",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "webhook",
+    "http",
+    "tcp",
+    "network",
+    "listener",
+    "simple"
+  ]
 }
