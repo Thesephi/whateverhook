@@ -1,6 +1,6 @@
 process.env.LOG_LEVEL = process.env.LOG_LEVEL || 'info';
 
-const somnus =require('somnus').default;
+const somnus = require('somnus').default;
 
 const universalRestHandler = (req, res, next) => {
 
@@ -25,3 +25,5 @@ somnus.start({
     'del *': universalRestHandler
   }
 });
+
+module.exports = somnus;

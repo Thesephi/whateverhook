@@ -31,3 +31,5 @@ server.on('error', (err) => {
 server.listen(process.env.PORT || 3002, () => {
   console.log('server bound');
 });
+
+module.exports = server;
